@@ -42,15 +42,27 @@ $(document).ready(function () {
     $(".marketplace-description").removeClass(
       "animation-marketplace-description-init"
     );
+    $(".marketplace-description1").removeClass(
+      "animation-marketplace-description"
+    );
+    $(".marketplace-description2").removeClass(
+      "animation-marketplace-description1"
+    );
+    $(".marketplace-description3").removeClass(
+      "animation-marketplace-description1"
+    );
+    $(".marketplace-description4").removeClass(
+      "animation-marketplace-description1"
+    );
 
     if (scroll > 2500) {
       $(".marketplace-description").addClass(
         "animation-marketplace-description-init"
       );
-      //   $(".market-body").addClass("animation-marketbody");
+      $(".market-body").addClass("animation-marketbody");
     }
 
-    const marketScroll = 3500;
+    const marketScroll = 3000;
 
     if (scroll > marketScroll) {
       $(".img-warrior1").addClass("animation-warrior1");
@@ -65,10 +77,46 @@ $(document).ready(function () {
       );
     }
 
-    // if (scroll > 5300) {
-    //   $(".partner-main").addClass("animation-partner");
-    //   $(".partner-img-group").addClass("animation-partner-img-group");
-    // }
+    if (scroll > 3500) {
+      $(".marketplace-description1").removeClass(
+        "animation-marketplace-description1"
+      );
+      $(".marketplace-description1").addClass(
+        "animation-marketplace-description"
+      );
+      $(".marketplace-description2").addClass(
+        "animation-marketplace-description1"
+      );
+    }
+
+    if (scroll > 4000) {
+      $(".marketplace-description2").removeClass(
+        "animation-marketplace-description1"
+      );
+      $(".marketplace-description2").addClass(
+        "animation-marketplace-description"
+      );
+      $(".marketplace-description3").addClass(
+        "animation-marketplace-description1"
+      );
+    }
+
+    if (scroll > 4500) {
+      $(".marketplace-description3").removeClass(
+        "animation-marketplace-description1"
+      );
+      $(".marketplace-description3").addClass(
+        "animation-marketplace-description"
+      );
+      $(".marketplace-description4").addClass(
+        "animation-marketplace-description1"
+      );
+    }
+
+    if (scroll > 5300) {
+      $(".partner-main").addClass("animation-partner");
+      $(".partner-img-group").addClass("animation-partner-img-group");
+    }
 
     if (scroll > 6000) {
       $(".partner-img-group").addClass("animation-partner-img-group-up");
