@@ -60,6 +60,8 @@ $(document).ready(function () {
         "animation-marketplace-description-init"
       );
       $(".market-body").addClass("animation-marketbody");
+      $(".indicator-num:nth-child(1)").addClass("active-num");
+      $(".indicator-num:nth-child(2)").removeClass("active-num");
     }
 
     const marketScroll = 3000;
@@ -75,6 +77,9 @@ $(document).ready(function () {
       $(".marketplace-description1").addClass(
         "animation-marketplace-description1"
       );
+      $(".indicator-num:nth-child(1)").removeClass("active-num");
+      $(".indicator-num:nth-child(2)").addClass("active-num");
+      $(".indicator-num:nth-child(3)").removeClass("active-num");
     }
 
     if (scroll > 3500) {
@@ -87,6 +92,9 @@ $(document).ready(function () {
       $(".marketplace-description2").addClass(
         "animation-marketplace-description1"
       );
+      $(".indicator-num:nth-child(2)").removeClass("active-num");
+      $(".indicator-num:nth-child(3)").addClass("active-num");
+      $(".indicator-num:nth-child(4)").removeClass("active-num");
     }
 
     if (scroll > 4000) {
@@ -99,6 +107,9 @@ $(document).ready(function () {
       $(".marketplace-description3").addClass(
         "animation-marketplace-description1"
       );
+      $(".indicator-num:nth-child(3)").removeClass("active-num");
+      $(".indicator-num:nth-child(4)").addClass("active-num");
+      $(".indicator-num:nth-child(5)").removeClass("active-num");
     }
 
     if (scroll > 4500) {
@@ -111,6 +122,8 @@ $(document).ready(function () {
       $(".marketplace-description4").addClass(
         "animation-marketplace-description1"
       );
+      $(".indicator-num:nth-child(4)").removeClass("active-num");
+      $(".indicator-num:nth-child(5)").addClass("active-num");
     }
 
     if (scroll > 5300) {
@@ -118,9 +131,9 @@ $(document).ready(function () {
       $(".partner-img-group").addClass("animation-partner-img-group");
     }
 
-    if (scroll > 6000) {
-      $(".partner-img-group").addClass("animation-partner-img-group-up");
-    }
+    // if (scroll > 6500) {
+    //   $(".partner-img-group").addClass("animation-partner-img-group-up");
+    // }
 
     // if (scroll > 6300) {
     //   $(".form-body").addClass("animation-form-body");
